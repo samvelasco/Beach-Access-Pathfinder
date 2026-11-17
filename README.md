@@ -2,15 +2,15 @@
 
 **Find the best way to the beach, without harming the beach.** Pick a starting point and the app finds beach entrances nearby, routes you to one on the real walking network, and keeps you out of protected areas, posted closures and rising tides. It works for people walking, using wheelchairs or strollers, or trying to tread lightly.
 
-![Demo: ranking beach entrances, a route, a guided walk-through, then the same screen in Spanish and in wheelchair mode](docs/demo.gif)
+![Demo: choosing wheelchair mode, finding the best beach access, reading the route, walking it, and switching to Spanish](docs/demo.gif)
 
-<sub>The demo uses invented sample entrances on a plain background so it works offline. The live app shows real USGS aerial imagery and real data.</sub>
+<sub>The demo uses invented sample entrances placed over real USGS aerial imagery near Daytona Beach, so it runs without any live data. The live app uses real mapped entrances.</sub>
 
 **Try it:** [live app](https://samvelasco.github.io/Beach-Access-Pathfinder/) · [offline demo](https://samvelasco.github.io/Beach-Access-Pathfinder/demo.html) · install it on a phone with *Add to Home Screen* (iPhone) or *Install app* (Android).
 
 ## Contents
 
-[What it does](#what-it-does) · [How to use it](#how-to-use-it) · [Where the data comes from](#where-the-data-comes-from) · [Run it yourself](#run-it-yourself) · [Publishing and maintaining](#publishing-and-maintaining) · [Honest limits](#honest-limits) · [Project layout](#project-layout) · [Roadmap](#roadmap)
+[What it does](#what-it-does) · [How to use it](#how-to-use-it) · [Where the data comes from](#where-the-data-comes-from) · [Run it yourself](#run-it-yourself) · [Publishing and maintaining](#publishing-and-maintaining) · [Notes](#notes) · [Project layout](#project-layout) · [Roadmap](#roadmap)
 
 ## What it does
 
@@ -73,7 +73,7 @@ Every push to `main` runs the tests and publishes to GitHub Pages (`.github/work
 - **Community reports:** *Share with maintainers* opens a GitHub issue labelled `report`. Review it, then copy the entry into `data/community-reports.json`. Reports saved without sharing stay on that person's device.
 - **Settings for your deployment** live in `js/config.js` (reports repository, default language).
 
-## Honest limits
+## Notes
 
 - **OpenStreetMap is volunteer-mapped.** Entrances are inferred, so some real ones may be missing or mislabeled. "Wheelchair accessible" means *mapped as* accessible, not verified.
 - **Closures apply only where posted.** There is no live statewide feed for temporary dune, turtle or shorebird postings, so those need curated entries or reports. Always follow signs on site.
