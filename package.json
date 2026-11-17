@@ -1,0 +1,10 @@
+{
+  "name": "beach-access-pathfinder",
+  "version": "0.1.0",
+  "description": "Conservation-aware, equity-aware beach access routing (demo)",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/real.test.js tests/features.test.js",
+    "serve": "python3 -m http.server 8080"
+  }
+}

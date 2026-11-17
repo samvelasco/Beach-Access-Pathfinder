@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a73e8">
+  <meta name="description" content="Find beach access points that respect protected areas, closures and tides.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Beach Access">
+  <title>Beach Access Pathfinder</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="map" data-i18n-aria="Map of beach access points and protected areas" aria-label="Map of beach access points and protected areas"></div>
+
+  <div class="side">
+    <form id="searchForm" class="search" autocomplete="off" role="search">
+      <input id="q" type="search" data-i18n-ph="Search a beach, address or place" data-i18n-aria="Search a place" placeholder="Search a beach, address or place" aria-label="Search a place">
+      <button type="submit" data-i18n-aria="Search" aria-label="Search">&#128269;</button>
+    </form>
+    <ul id="suggest" class="suggest" hidden></ul>
+
+    <div class="chips">
+      <div class="seg" id="modeSeg" role="radiogroup" data-i18n-aria="How are you travelling?" aria-label="How are you travelling?">
+        <button type="button" role="radio" data-mode="walk" aria-checked="true" class="on" data-i18n="Walk">Walk</button>
+        <button type="button" role="radio" data-mode="wheelchair" aria-checked="false" data-i18n="Wheelchair">Wheelchair</button>
+        <button type="button" role="radio" data-mode="lowimpact" aria-checked="false" data-i18n-title="Stays away from protected areas" data-i18n="Low-impact" title="Stays away from protected areas">Low-impact</button>
+      </div>
+      <label class="datechip"><span data-i18n="Visit">Visit</span><input type="date" id="date" data-i18n-aria="Visit date" aria-label="Visit date"></label>
+    </div>
+
+    <div class="sheet" id="sheet" aria-live="polite"></div>
+  </div>
+
+  <div class="fabs">
+    <button id="locBtn" class="fab" type="button" data-i18n="&#9678; My location">&#9678; My location</button>
+    <button id="layerBtn" class="fab" type="button">Map view</button>
+    <button id="langBtn" class="fab" type="button" lang="es">Espa&ntilde;ol</button>
+    <button id="setBtn" class="fab" type="button" data-i18n="&#9881; Settings">&#9881; Settings</button>
+  </div>
+  <button id="areaBtn" class="pill" type="button" data-i18n="Search this area" hidden>Search this area</button>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/geo.js"></script>
+  <script src="js/closures.js"></script>
+  <script src="js/osm.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/tides.js"></script>
+  <script src="js/tidecheck.js"></script>
+  <script src="js/official.js"></script>
+  <script src="js/photos.js"></script>
+  <script src="js/reports.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

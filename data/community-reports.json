@@ -1,0 +1,5 @@
+{
+  "_help": "Reviewed community reports shown to everyone. Maintainers copy entries here from GitHub issues labelled 'report'. type is one of: blocked, closure, hazard, access, other. 'until' is optional (YYYY-MM-DD).",
+  "_example": { "id": "example1", "type": "blocked", "lat": 29.2108, "lon": -81.0228, "note": "Boardwalk rail broken", "created": "2026-11-17", "until": "2026-12-31" },
+  "reports": []
+}

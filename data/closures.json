@@ -1,0 +1,5 @@
+{
+  "_help": "Curated closure notices shown to everyone. Each entry needs a name and either lat/lon (+ radius_m, default 50) or a polygon [[lat,lon],...]. Dates: use 'from'/'to' (YYYY-MM-DD) for a one-off notice, or 'dates' such as 'March 1 - August 31' for a yearly one. Add 'source' and 'note'. Example (delete the underscore to use): see _example.",
+  "_example": { "id": "dune-restoration-2026", "name": "Dune restoration area", "lat": 29.2108, "lon": -81.0228, "radius_m": 80, "from": "2026-03-01", "to": "2026-09-30", "source": "City of Daytona Beach notice", "note": "Walkover closed during dune planting." },
+  "closures": []
+}
